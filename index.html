@@ -13,6 +13,7 @@
         .zen-line { width: 1px; background: linear-gradient(to bottom, transparent, #1A1A1B, transparent); }
         .stat-card { border-bottom: 1px solid #eee; padding: 2rem 0; }
         .expertise-tag { border: 1px solid #1A1A1B; padding: 2px 8px; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; }
+        input, textarea { -webkit-appearance: none; border-radius: 0; }
     </style>
 </head>
 <body class="antialiased selection:bg-gray-200">
@@ -20,7 +21,7 @@
 
     <main class="max-w-4xl mx-auto px-6 py-20 md:py-32">
         <header class="mb-32">
-            <h1 class="text-5xl md:text-8xl mb-6 tracking-tighter italic">Zhukovskiy</h1>
+            <h1 class="text-5xl md:text-8xl mb-6 tracking-tighter italic text-black">Zhukovskiy</h1>
             <p class="text-lg md:text-2xl text-gray-400 font-light tracking-widest uppercase italic">Architect of Digital Change</p>
             <div class="mt-8 flex flex-wrap gap-3 text-[10px] uppercase tracking-widest text-gray-500">
                 <span class="expertise-tag">PhD Tech</span>
@@ -45,19 +46,19 @@
             <h2 class="text-[10px] uppercase tracking-[0.5em] text-gray-400 mb-16 italic font-semibold">Technical DNA / 02</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div>
-                    <h3 class="text-xl mb-4 italic">От кода к стратегии</h3>
+                    <h3 class="text-xl mb-4 italic text-black">От кода к стратегии</h3>
                     <p class="text-sm text-gray-600 font-light leading-relaxed">
-                        8 лет интенсивной разработки и проектирования нетиповых решений на базе 1С[cite: 231]. Личное участие в оптимизации высоконагруженных систем на уровне SQL-запросов и разработка алгоритмов дедупликации данных (сокращение дублей на 60%)[cite: 223, 220].
+                        8 лет интенсивной разработки и проектирования нетиповых решений на базе 1С. Личное участие в оптимизации высоконагруженных систем на уровне SQL-запросов и разработка алгоритмов дедупликации данных.
                     </p>
                 </div>
                 <div class="flex flex-col gap-4">
                     <div class="stat-card py-0">
                         <div class="text-2xl font-light">1С:ERP / УПП</div>
-                        <p class="text-[9px] text-gray-400 uppercase tracking-widest">Архитектура федеральных систем (15+ заводов) [cite: 221]</p>
+                        <p class="text-[9px] text-gray-400 uppercase tracking-widest">Архитектура федеральных систем (15+ заводов)</p>
                     </div>
                     <div class="stat-card py-0">
                         <div class="text-2xl font-light">MDM & GIS</div>
-                        <p class="text-[9px] text-gray-400 uppercase tracking-widest">Управление НСИ и геоинформационными сервисами [cite: 177, 220]</p>
+                        <p class="text-[9px] text-gray-400 uppercase tracking-widest">Управление НСИ и геоинформационными сервисами</p>
                     </div>
                 </div>
             </div>
@@ -70,24 +71,43 @@
                     <span class="text-xs text-gray-300 tabular-nums font-light">2019 — 2025</span>
                     <div>
                         <h3 class="text-xl">Ростелеком</h3>
-                        <p class="text-gray-400 font-light italic text-sm">Portfolio Director / Директор отраслевых сервисов [cite: 31, 32]</p>
+                        <p class="text-gray-400 font-light italic text-sm">Portfolio Director / Директор отраслевых сервисов</p>
                     </div>
                 </div>
                 <div class="flex flex-col md:flex-row md:items-baseline gap-4 group">
                     <span class="text-xs text-gray-300 tabular-nums font-light">2011 — 2016</span>
                     <div>
                         <h3 class="text-xl">ГК Разгуляй</h3>
-                        <p class="text-gray-400 font-light italic text-sm">ИТ Директор / Руководитель портфеля трансформации [cite: 98, 99]</p>
+                        <p class="text-gray-400 font-light italic text-sm">ИТ Директор / Руководитель портфеля трансформации</p>
                     </div>
                 </div>
                 <div class="flex flex-col md:flex-row md:items-baseline gap-4 group">
                     <span class="text-xs text-gray-300 tabular-nums font-light">2005 — 2013</span>
                     <div>
                         <h3 class="text-xl">ICSKursk</h3>
-                        <p class="text-gray-400 font-light italic text-sm">Lead Solution Architect / Программист 1С (совладелец) [cite: 227, 228]</p>
+                        <p class="text-gray-400 font-light italic text-sm">Lead Solution Architect / Программист 1С</p>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section id="contact" class="pt-20 border-t border-gray-100">
+            <h2 class="text-[10px] uppercase tracking-[0.5em] text-gray-400 mb-12 italic font-semibold">Contact / 04</h2>
+            <form action="https://formspree.io/f/xyzkpvvy" method="POST" class="max-w-lg space-y-12">
+                <input type="text" name="name" required placeholder="Ваше имя" 
+                       class="w-full bg-transparent border-b border-gray-200 py-4 focus:outline-none focus:border-black transition-colors font-light text-lg text-black">
+                
+                <input type="email" name="_replyto" required placeholder="Email или Telegram" 
+                       class="w-full bg-transparent border-b border-gray-200 py-4 focus:outline-none focus:border-black transition-colors font-light text-lg text-black">
+                
+                <textarea name="message" required placeholder="Суть предложения" rows="3" 
+                          class="w-full bg-transparent border-b border-gray-200 py-4 focus:outline-none focus:border-black transition-colors font-light text-lg text-black resize-none"></textarea>
+                
+                <button type="submit" class="group flex items-center gap-6 text-[10px] uppercase tracking-[0.4em] font-bold text-black">
+                    <span>Отправить запрос</span>
+                    <span class="block w-12 h-[1px] bg-black group-hover:w-24 transition-all duration-700"></span>
+                </button>
+            </form>
         </section>
 
         <footer class="mt-40 text-[9px] uppercase tracking-[0.6em] text-gray-300 flex justify-between italic border-t pt-8">
