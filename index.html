@@ -3,136 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Денис Жуковский | CIO & CDTO | zhukovskiy.pro</title>
-    
+    <title>Денис Жуковский | Portfolio Director & CDTO</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22black%22/><rect x=%2245%22 y=%2220%22 width=%2210%22 height=%2260%22 fill=%22white%22/></svg>">
-
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #FDFCF8; color: #1A1A1B; scroll-behavior: smooth; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        
-        /* Декоративная линия в стиле дзен */
         .zen-line { width: 1px; background: linear-gradient(to bottom, transparent, #1A1A1B, transparent); }
-        
-        /* Линии для разделения карточек показателей */
         .stat-card { border-bottom: 1px solid #eee; padding: 2rem 0; }
-        
-        /* Плавная анимация появления */
-        .fade-in { animation: fadeIn ease 2.5s; }
-        @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
-
-        /* Убираем стандартные рамки input в Safari на iOS */
-        input, textarea { -webkit-appearance: none; border-radius: 0; }
+        .expertise-tag { border: 1px solid #1A1A1B; padding: 2px 8px; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; }
     </style>
 </head>
-<body class="antialiased selection:bg-gray-200 fade-in">
-
+<body class="antialiased selection:bg-gray-200">
     <div class="fixed left-8 top-0 bottom-0 zen-line hidden md:block opacity-10"></div>
 
     <main class="max-w-4xl mx-auto px-6 py-20 md:py-32">
-        
         <header class="mb-32">
             <h1 class="text-5xl md:text-8xl mb-6 tracking-tighter italic">Zhukovskiy</h1>
-            <p class="text-lg md:text-2xl text-gray-400 font-light tracking-widest uppercase">Chief Digital Transformation Officer</p>
+            <p class="text-lg md:text-2xl text-gray-400 font-light tracking-widest uppercase italic">Architect of Digital Change</p>
+            <div class="mt-8 flex flex-wrap gap-3 text-[10px] uppercase tracking-widest text-gray-500">
+                <span class="expertise-tag">PhD Tech</span>
+                <span class="expertise-tag">MBA RANHPA</span>
+                <span class="expertise-tag">1C Expert</span>
+            </div>
         </header>
 
         <section class="mb-40">
             <h2 class="text-[10px] uppercase tracking-[0.5em] text-gray-400 mb-16 italic font-semibold">Philosophy / 01</h2>
             <div class="grid gap-12 max-w-3xl">
-                <div class="group">
-                    <p class="text-2xl md:text-3xl font-light leading-snug border-l-2 border-transparent group-hover:border-black pl-6 transition-all duration-700">
-                        «Цифровизация — это не внедрение софта, а изменение <span class="italic text-gray-500">ДНК бизнеса</span>».
-                    </p>
-                </div>
-                <div class="group">
-                    <p class="text-2xl md:text-3xl font-light leading-snug border-l-2 border-transparent group-hover:border-black pl-6 transition-all duration-700">
-                        «Автоматизация хаоса лишь масштабирует ошибки. <span class="italic text-gray-500">Сначала структура, затем код</span>».
-                    </p>
-                </div>
-                <div class="group">
-                    <p class="text-2xl md:text-3xl font-light leading-snug border-l-2 border-transparent group-hover:border-black pl-6 transition-all duration-700">
-                        «Эпоха SaaS уступает место <span class="italic text-gray-500">автономным агентам</span>. ИТ измеряется не функциями, а временем человека».
-                    </p>
-                </div>
-                <div class="group">
-                    <p class="text-2xl md:text-3xl font-light leading-snug border-l-2 border-transparent group-hover:border-black pl-6 transition-all duration-700">
-                        «Господдержка и ИЦК — это не бюрократия, а <span class="italic text-gray-500">стратегическое плечо</span> для инноваций».
-                    </p>
-                </div>
+                <p class="text-2xl md:text-3xl font-light leading-snug border-l-2 border-black pl-6">
+                    «Глубокое понимание архитектуры данных позволяет мне видеть <span class="italic text-gray-500">системные ограничения</span> еще на этапе идеи».
+                </p>
+                <p class="text-2xl md:text-3xl font-light leading-snug border-l-2 border-transparent hover:border-black pl-6 transition-all">
+                    «ИТ-стратегия успешна только тогда, когда она говорит на языке <span class="italic text-gray-500">P&L и ROI</span>».
+                </p>
             </div>
         </section>
 
         <section class="mb-40">
-            <h2 class="text-[10px] uppercase tracking-[0.5em] text-gray-400 mb-16 italic font-semibold">Impact / 02</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-2">
-                <div class="stat-card">
-                    <div class="text-4xl font-light mb-2">20 000+</div>
-                    <p class="text-[10px] text-gray-500 uppercase tracking-widest">Сотрудников в контуре ИТ</p>
+            <h2 class="text-[10px] uppercase tracking-[0.5em] text-gray-400 mb-16 italic font-semibold">Technical DNA / 02</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div>
+                    <h3 class="text-xl mb-4 italic">От кода к стратегии</h3>
+                    <p class="text-sm text-gray-600 font-light leading-relaxed">
+                        8 лет интенсивной разработки и проектирования нетиповых решений на базе 1С[cite: 231]. Личное участие в оптимизации высоконагруженных систем на уровне SQL-запросов и разработка алгоритмов дедупликации данных (сокращение дублей на 60%)[cite: 223, 220].
+                    </p>
                 </div>
-                <div class="stat-card">
-                    <div class="text-4xl font-light mb-2">2 млрд ₽</div>
-                    <p class="text-[10px] text-gray-500 uppercase tracking-widest">Бюджет трансформации</p>
-                </div>
-                <div class="stat-card">
-                    <div class="text-4xl font-light mb-2">459 млн ₽</div>
-                    <p class="text-[10px] text-gray-500 uppercase tracking-widest">Выручка от новых сервисов</p>
-                </div>
-                <div class="stat-card">
-                    <div class="text-4xl font-light mb-2">40%</div>
-                    <p class="text-[10px] text-gray-500 uppercase tracking-widest">Экономия на логистике АПК</p>
+                <div class="flex flex-col gap-4">
+                    <div class="stat-card py-0">
+                        <div class="text-2xl font-light">1С:ERP / УПП</div>
+                        <p class="text-[9px] text-gray-400 uppercase tracking-widest">Архитектура федеральных систем (15+ заводов) [cite: 221]</p>
+                    </div>
+                    <div class="stat-card py-0">
+                        <div class="text-2xl font-light">MDM & GIS</div>
+                        <p class="text-[9px] text-gray-400 uppercase tracking-widest">Управление НСИ и геоинформационными сервисами [cite: 177, 220]</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="mb-40">
             <h2 class="text-[10px] uppercase tracking-[0.5em] text-gray-400 mb-16 italic font-semibold">Path / 03</h2>
-            <div class="space-y-16">
-                <div class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-8 group">
-                    <span class="text-xs text-gray-300 tabular-nums font-light">2019 — 2026</span>
+            <div class="space-y-12">
+                <div class="flex flex-col md:flex-row md:items-baseline gap-4 group">
+                    <span class="text-xs text-gray-300 tabular-nums font-light">2019 — 2025</span>
                     <div>
-                        <h3 class="text-2xl font-normal group-hover:text-gray-500 transition-colors">Ростелеком</h3>
-                        <p class="text-gray-400 font-light italic mt-1 text-sm md:text-base">Директор направления отраслевых сервисов</p>
+                        <h3 class="text-xl">Ростелеком</h3>
+                        <p class="text-gray-400 font-light italic text-sm">Portfolio Director / Директор отраслевых сервисов [cite: 31, 32]</p>
                     </div>
                 </div>
-                <div class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-8 group">
+                <div class="flex flex-col md:flex-row md:items-baseline gap-4 group">
                     <span class="text-xs text-gray-300 tabular-nums font-light">2011 — 2016</span>
                     <div>
-                        <h3 class="text-2xl font-normal group-hover:text-gray-500 transition-colors">ГК Разгуляй</h3>
-                        <p class="text-gray-400 font-light italic mt-1 text-sm md:text-base">ИТ Директор (CIO)</p>
+                        <h3 class="text-xl">ГК Разгуляй</h3>
+                        <p class="text-gray-400 font-light italic text-sm">ИТ Директор / Руководитель портфеля трансформации [cite: 98, 99]</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row md:items-baseline gap-4 group">
+                    <span class="text-xs text-gray-300 tabular-nums font-light">2005 — 2013</span>
+                    <div>
+                        <h3 class="text-xl">ICSKursk</h3>
+                        <p class="text-gray-400 font-light italic text-sm">Lead Solution Architect / Программист 1С (совладелец) [cite: 227, 228]</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="pt-20 border-t border-gray-100">
-            <h2 class="text-[10px] uppercase tracking-[0.5em] text-gray-400 mb-12 italic font-semibold">Contact / 04</h2>
-            <form action="https://formspree.io/f/ВАШ_ID" method="POST" class="max-w-lg space-y-12">
-                <input type="text" name="name" required placeholder="Ваше имя" 
-                       class="w-full bg-transparent border-b border-gray-200 py-4 focus:outline-none focus:border-black transition-colors font-light text-lg">
-                
-                <input type="email" name="_replyto" required placeholder="Email или Telegram" 
-                       class="w-full bg-transparent border-b border-gray-200 py-4 focus:outline-none focus:border-black transition-colors font-light text-lg">
-                
-                <textarea name="message" required placeholder="Суть предложения" rows="3" 
-                          class="w-full bg-transparent border-b border-gray-200 py-4 focus:outline-none focus:border-black transition-colors font-light text-lg resize-none"></textarea>
-                
-                <button type="submit" class="group flex items-center gap-6 text-[10px] uppercase tracking-[0.4em] font-bold">
-                    <span>Отправить запрос</span>
-                    <span class="block w-12 h-[1px] bg-black group-hover:w-24 transition-all duration-700"></span>
-                </button>
-            </form>
-        </section>
-
-        <footer class="mt-40 text-[9px] uppercase tracking-[0.6em] text-gray-300 flex justify-between italic">
+        <footer class="mt-40 text-[9px] uppercase tracking-[0.6em] text-gray-300 flex justify-between italic border-t pt-8">
             <span>zhukovskiy.pro</span>
             <span>MMXXVI</span>
         </footer>
-
     </main>
-
 </body>
 </html>
