@@ -3,124 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Денис Жуковский | Portfolio Director & CDTO</title>
+    <title>Денис Жуковский | Директор портфеля проектов & CDTO</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <style>
-        :root { --bg: #020617; --card-bg: rgba(30, 41, 59, 0.5); --accent: #38bdf8; }
-        body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: #f8fafc; }
+        :root { 
+            --bg: #0f172a; 
+            --card-bg: rgba(30, 41, 59, 0.7); 
+            --accent: #38bdf8; 
+        }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: #f1f5f9; }
         .bento-card { 
             background: var(--card-bg); 
-            backdrop-filter: blur(12px); 
-            border: 1px solid rgba(255,255,255,0.05); 
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(10px); 
+            border: 1px solid rgba(255,255,255,0.1); 
+            transition: all 0.3s ease;
         }
-        .bento-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+        .bento-card:hover { border-color: var(--accent); }
         h1, .display-serif { font-family: 'Playfair Display', serif; }
-        .text-gradient { background: linear-gradient(to bottom right, #fff 30%, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .text-gradient { background: linear-gradient(to bottom right, #ffffff 40%, #cbd5e1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
-<body class="antialiased p-4 md:p-8">
+<body class="antialiased p-4 md:p-8 lg:p-12">
 
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-5">
         
-        <div class="md:col-span-3 bento-card p-8 md:p-12 rounded-[2rem] flex flex-col justify-end min-h-[400px]">
+        <div class="md:col-span-3 bento-card p-8 md:p-14 rounded-[2.5rem] flex flex-col justify-end min-h-[450px]">
             <div class="mb-auto">
-                <span class="text-[10px] uppercase tracking-[0.4em] text-sky-400 font-bold">Portfolio Director & CDTO</span>
+                <span class="text-[11px] uppercase tracking-[0.4em] text-sky-400 font-bold">Директор портфеля проектов / CDTO</span>
             </div>
-            <h1 class="text-6xl md:text-8xl font-bold tracking-tighter mb-6 text-gradient">Zhukovskiy.</h1>
-            <p class="text-lg md:text-2xl text-slate-400 font-light max-w-2xl leading-relaxed">
-                Трансформирую бизнес через <span class="text-white italic">архитектуру данных</span> и системный менеджмент. 25 лет опыта от кода до стратегии.
+            <h1 class="text-6xl md:text-8xl font-bold tracking-tighter mb-8 text-gradient">Жуковский.</h1>
+            <p class="text-xl md:text-2xl text-slate-300 font-light max-w-2xl leading-relaxed">
+                Трансформирую бизнес через <span class="text-white italic">архитектуру данных</span> и системный менеджмент. 25 лет опыта: от кода до стратегии холдингов.
             </p>
         </div>
 
-        <div class="md:col-span-1 grid gap-4">
-            <div class="bento-card p-6 rounded-[2rem] flex flex-col items-center justify-center text-center">
-                <span class="text-3xl mb-2">🎓</span>
-                <h3 class="font-bold text-white uppercase tracking-widest text-[10px]">Education</h3>
-                <p class="text-sm mt-2 text-slate-300">PhD Tech Sciences<br>MBA RANHPA</p>
+        <div class="md:col-span-1 grid gap-5">
+            <div class="bento-card p-8 rounded-[2.5rem] flex flex-col items-center justify-center text-center">
+                <span class="text-4xl mb-3">🎓</span>
+                <h3 class="font-bold text-white uppercase tracking-widest text-[10px] mb-2">Образование</h3>
+                <p class="text-sm text-slate-300">Кандидат технических наук<br>МВА РАНХиГС</p>
             </div>
-            <div class="bento-card p-6 rounded-[2rem] flex flex-col items-center justify-center text-center">
-                <span class="text-3xl mb-2">⚡</span>
-                <h3 class="font-bold text-white uppercase tracking-widest text-[10px]">Expertise</h3>
-                <p class="text-sm mt-2 text-slate-300">1C Expert<br>Solution Architect</p>
+            <div class="bento-card p-8 rounded-[2.5rem] flex flex-col items-center justify-center text-center">
+                <span class="text-4xl mb-3">🛠️</span>
+                <h3 class="font-bold text-white uppercase tracking-widest text-[10px] mb-2">Экспертиза</h3>
+                <p class="text-sm text-slate-300">Архитектор решений<br>Эксперт 1С</p>
             </div>
         </div>
 
-        <div class="md:col-span-2 bento-card p-8 rounded-[2rem]">
-            <h2 class="text-[10px] uppercase tracking-[0.4em] text-slate-500 mb-8 font-bold">Key Impact</h2>
-            <div class="grid grid-cols-2 gap-8">
+        <div class="md:col-span-2 bento-card p-10 rounded-[2.5rem]">
+            <h2 class="text-[11px] uppercase tracking-[0.4em] text-slate-500 mb-10 font-bold">Ключевые показатели</h2>
+            <div class="grid grid-cols-2 gap-10">
                 <div>
-                    <div class="text-4xl font-extrabold text-sky-400 mb-1">2B ₽</div>
-                    <p class="text-[9px] uppercase tracking-widest text-slate-500">Portfolio Budget</p>
+                    <div class="text-4xl font-extrabold text-sky-400 mb-1">2 млрд ₽</div>
+                    <p class="text-[10px] uppercase tracking-widest text-slate-500">Бюджет портфеля</p>
                 </div>
                 <div>
-                    <div class="text-4xl font-extrabold text-sky-400 mb-1">600M+</div>
-                    <p class="text-[9px] uppercase tracking-widest text-slate-500">Investments Raised</p>
+                    <div class="text-4xl font-extrabold text-sky-400 mb-1">600 млн+</div>
+                    <p class="text-[10px] uppercase tracking-widest text-slate-500">Привлечено грантов</p>
                 </div>
                 <div>
                     <div class="text-4xl font-extrabold text-white mb-1">40%</div>
-                    <p class="text-[9px] uppercase tracking-widest text-slate-500">Fuel Economy</p>
+                    <p class="text-[10px] uppercase tracking-widest text-slate-500">Экономия ресурсов</p>
                 </div>
                 <div>
                     <div class="text-4xl font-extrabold text-white mb-1">97%</div>
-                    <p class="text-[9px] uppercase tracking-widest text-slate-500">SLA Level</p>
+                    <p class="text-[10px] uppercase tracking-widest text-slate-500">Уровень сервиса (SLA)</p>
                 </div>
             </div>
         </div>
 
-        <div class="md:col-span-2 bento-card p-8 rounded-[2rem] bg-gradient-to-br from-slate-900 to-slate-950">
-            <h2 class="text-[10px] uppercase tracking-[0.4em] text-slate-500 mb-8 font-bold">Technical DNA</h2>
-            <div class="space-y-4">
-                <p class="text-sm text-slate-300 leading-relaxed italic">
-                    «Глубокое понимание архитектуры на уровне SQL-запросов и высоконагруженных систем позволяет мне видеть риски там, где другие видят только слайды».
-                </p>
-                <div class="flex flex-wrap gap-2 pt-4">
-                    <span class="px-3 py-1 bg-white/5 rounded-full text-[9px] uppercase tracking-widest border border-white/10">1C:ERP</span>
-                    <span class="px-3 py-1 bg-white/5 rounded-full text-[9px] uppercase tracking-widest border border-white/10">GIS/GPS</span>
-                    <span class="px-3 py-1 bg-white/5 rounded-full text-[9px] uppercase tracking-widest border border-white/10">MDM</span>
-                    <span class="px-3 py-1 bg-white/5 rounded-full text-[9px] uppercase tracking-widest border border-white/10">ITSM</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="md:col-span-3 bento-card p-8 rounded-[2rem]">
-            <h2 class="text-[10px] uppercase tracking-[0.4em] text-slate-500 mb-8 font-bold">The Path</h2>
+        <div class="md:col-span-2 bento-card p-10 rounded-[2.5rem] bg-slate-800/40">
+            <h2 class="text-[11px] uppercase tracking-[0.4em] text-slate-500 mb-10 font-bold">Технологический ДНК</h2>
             <div class="space-y-6">
-                <div class="flex items-start gap-6 group">
-                    <span class="text-[10px] text-slate-600 font-mono pt-1">2019-2025</span>
+                <p class="text-base text-slate-300 font-light leading-relaxed italic">
+                    «Глубокое понимание архитектуры на уровне SQL-запросов позволяет мне видеть системные риски там, где другие видят только слайды».
+                </p>
+                <div class="flex flex-wrap gap-3 pt-2">
+                    <span class="px-4 py-1.5 bg-white/5 rounded-full text-[10px] uppercase tracking-widest border border-white/10">1C:ERP</span>
+                    <span class="px-4 py-1.5 bg-white/5 rounded-full text-[10px] uppercase tracking-widest border border-white/10">ГИС/GPS</span>
+                    <span class="px-4 py-1.5 bg-white/5 rounded-full text-[10px] uppercase tracking-widest border border-white/10">MDM</span>
+                    <span class="px-4 py-1.5 bg-white/5 rounded-full text-[10px] uppercase tracking-widest border border-white/10">ITSM</span>
+                    <span class="px-4 py-1.5 bg-white/5 rounded-full text-[10px] uppercase tracking-widest border border-white/10">AI Агенты</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:col-span-3 bento-card p-10 rounded-[2.5rem]">
+            <h2 class="text-[11px] uppercase tracking-[0.4em] text-slate-500 mb-10 font-bold">Профессиональный путь</h2>
+            <div class="space-y-8">
+                <div class="flex items-start gap-8">
+                    <span class="text-[11px] text-slate-500 font-mono pt-1">2019 — 2026</span>
                     <div>
-                        <h4 class="text-white font-semibold">Ростелеком</h4>
-                        <p class="text-xs text-slate-400">Director of Digital Industry Services</p>
+                        <h4 class="text-white text-lg font-semibold">Ростелеком</h4>
+                        <p class="text-sm text-slate-400">Директор направления отраслевых цифровых сервисов</p>
                     </div>
                 </div>
-                <div class="flex items-start gap-6">
-                    <span class="text-[10px] text-slate-600 font-mono pt-1">2011-2016</span>
+                <div class="flex items-start gap-8">
+                    <span class="text-[11px] text-slate-500 font-mono pt-1">2011 — 2016</span>
                     <div>
-                        <h4 class="text-white font-semibold">ГК Разгуляй</h4>
-                        <p class="text-xs text-slate-400">Chief Information Officer (CIO)</p>
+                        <h4 class="text-white text-lg font-semibold">ГК Разгуляй</h4>
+                        <p class="text-sm text-slate-400">ИТ-директор (CIO) / Руководитель трансформации</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-8">
+                    <span class="text-[11px] text-slate-500 font-mono pt-1">2005 — 2013</span>
+                    <div>
+                        <h4 class="text-white text-lg font-semibold">ICSKursk</h4>
+                        <p class="text-sm text-slate-400">Ведущий архитектор решений / Совладелец</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="md:col-span-1 bento-card p-8 rounded-[2rem] bg-sky-500 flex flex-col justify-between group cursor-pointer overflow-hidden relative">
+        <div class="md:col-span-1 bento-card p-10 rounded-[2.5rem] bg-sky-600 flex flex-col justify-between group relative overflow-hidden">
             <div class="relative z-10">
-                <h2 class="text-[10px] uppercase tracking-[0.4em] text-sky-900 font-bold mb-4">Connect</h2>
-                <p class="text-sky-950 font-bold text-xl leading-tight">Start a strategic dialogue</p>
+                <h2 class="text-[11px] uppercase tracking-[0.4em] text-sky-100 font-bold mb-6">Связь</h2>
+                <p class="text-white font-bold text-2xl leading-tight">Начать стратегический диалог</p>
             </div>
-            <div class="relative z-10 space-y-2 mt-8">
-                <a href="mailto:den_vz@mail.ru" class="block text-sm text-sky-900 font-semibold hover:underline">den_vz@mail.ru</a>
-                <a href="https://t.me/denvzh" class="block text-sm text-sky-900 font-semibold hover:underline">Telegram: @denvzh</a>
+            <div class="relative z-10 space-y-4 mt-12">
+                <a href="mailto:den_vz@mail.ru" class="block text-sm text-white font-medium hover:underline tracking-wide">den_vz@mail.ru</a>
+                <a href="https://t.me/denvzh" class="block text-sm text-white font-medium hover:underline tracking-wide">Telegram: @denvzh</a>
             </div>
-            <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-sky-400 rounded-full group-hover:scale-150 transition-transform duration-700"></div>
+            <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-sky-500 rounded-full group-hover:scale-125 transition-transform duration-700"></div>
         </div>
 
     </div>
 
-    <footer class="max-w-6xl mx-auto mt-8 px-4 flex justify-between text-[9px] uppercase tracking-[0.5em] text-slate-600 italic">
+    <footer class="max-w-6xl mx-auto mt-12 px-6 flex justify-between text-[10px] uppercase tracking-[0.5em] text-slate-500 italic">
         <span>zhukovskiy.pro</span>
-        <span>© 2026 Strategy & Architecture</span>
+        <span>© 2026 Стратегия и Архитектура</span>
     </footer>
 
 </body>
